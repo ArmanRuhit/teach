@@ -62,11 +62,11 @@ To run a lesson, these get filled — the substrate file says how, the knowledge
 
 ## Persisting the lesson
 
-Keep a durable record of what was taught, rooted in the project folder so it lives with the work and can feed downstream tools (e.g. the `logseq-flashcards` skill). Do this by default unless the learner declines.
+Keep a durable record of what was taught, stored centrally so it's reusable across projects and can feed downstream tools (e.g. the `logseq-flashcards` skill). Do this by default unless the learner declines.
 
-- Create a `teachings/` directory at the **root of the project** being built or studied. For a topic with no project, create a folder named for the subject and root it there.
+- Create the lesson folder at **`/desk/claude/teachings/<project-or-subject-slug>/`** — a central hub namespaced per project/subject, not inside the project repo. (This keeps study notes out of the repo so they aren't committed/pushed, and gathers all learnings in one place.) Tell the learner the notes live there and won't be part of any git commit. **If `/desk/claude/teachings/` doesn't exist, ask the learner where to put the notes instead** (and use that location for the rest of the session) rather than silently creating the default path or writing into the repo.
 - **Write as you go, not at the end** — each time a unit passes its acceptance criteria, append its note. If the session stops early, the record is still complete up to that point.
-- One Markdown file per unit, `teachings/NNN-<unit-slug>.md`, plus a `teachings/README.md` index listing the subject and the units covered with dates.
+- One Markdown file per unit, `NNN-<unit-slug>.md`, plus a `README.md` index listing the subject and the units covered with dates, inside that folder.
 - Each unit note captures, in this order, so it maps cleanly to later question generation:
   - **Concept** — what it is, in a sentence or two.
   - **Why it matters** — the reasoning, trade-off, or contract behind it (the interview-relevant part).
