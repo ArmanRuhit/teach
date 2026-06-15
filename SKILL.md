@@ -17,7 +17,8 @@ Ambiguous? Ask once: *"Do you want to learn this by building something end to en
 ## The engine (both substrates)
 
 ### Setup (once)
-- **Calibrate level** — default to a beginner pace; assume new unless they show otherwise (fluent terminology, production references, advanced questions). Fade faster when they read as advanced.
+- **Check prior teachings first** — before calibrating, look in `/desk/claude/teachings/` for this learner's earlier lessons (any subject). Read the relevant `README.md` and unit notes to see which units/concepts they've already produced themselves. Treat those as *known*: skip or fast-forward them, reference them ("you did this in <lesson>"), and start the fade controller mid-ladder for anything they've met before instead of re-teaching from a full worked example. A shared skill/stack across lessons (e.g. React, Tailwind) is strong evidence of existing fluency.
+- **Calibrate level** — default to a beginner pace; assume new unless they show otherwise (fluent terminology, production references, advanced questions, or prior teachings notes covering the material). Fade faster when they read as advanced.
 - **Backward design** — open by showing the destination (what they'll be able to do / what the finished thing does) so every unit has a visible target.
 - **Establish a baseline** — get a working starting point fast: BUILD → a walking skeleton (thinnest running thing); TOPIC → the simplest correct mental model plus one tiny worked example.
 
