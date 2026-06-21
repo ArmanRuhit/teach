@@ -24,15 +24,20 @@ Ambiguous? Ask once: *"Do you want to learn this by building something end to en
 
 ### The unit loop (per new unit)
 1. **Teach — worked example.** Demonstrate the unit fully, explaining what each part does and *why* this approach, isolated to that one unit. Show it working (run it / a concrete instance).
+   - **Match the support to element interactivity.** A full worked example pays off when the unit has *many pieces that must be held in mind at once* (high interactivity) — that's exactly when a novice's working memory would otherwise overload searching for a solution. For low-interactivity material (an isolated fact, a one-line lookup) a worked example adds little; just state it and move to the challenge.
+   - **Break the solution into complete, explicit steps** — each step one meaningful transformation, shown in full. Don't skip the "obvious" intermediate move; what's a single chunk to you is the high-load step for the learner.
+   - **Give the clearest treatment to the step that ties the others together.** The hardest step to learn is often *not* the first — it's the middle one that links backward and forward, because it carries the relational load. Don't assume Step 1 needs the most support; find the connective step and work it most explicitly.
+   - **Keep explanation next to its referent** (avoid split attention — no making the learner hold a diagram on one screen and its description on another), and **strip extraneous detail** — decorative context and redundant restatement consume the working memory that should go to the method.
 2. **Challenge — near-transfer, never throwaway.** Hand the learner the next thing that *reuses the same unit* and have them produce it. Provide a short spec, **acceptance criteria** (the observable result that means it's correct), and a **self-explanation prompt** ("why does this work?"). Withhold the solution.
 3. **Review & verify.** Assess against the acceptance criteria. If short, give a **graduated hint** — a nudge, then a specific pointer, then the fix only if still stuck. Once it passes, verify by running/observing, then advance.
 
 ### Fade controller
-Support level is keyed to how often the learner has met a unit and how they're doing:
+Support level is keyed to how often the learner has met a unit and how they're doing. Fading isn't just economy — once a learner has the schema, a full worked example becomes *redundant guidance* that adds load and can slow them (the expertise-reversal effect). So withdraw support as it stops earning its place:
 - **1st encounter:** full worked example.
-- **2nd:** a partial to complete (skeleton with key parts blanked).
+- **2nd:** a completion problem — give the first (highest-load) steps worked and have the learner finish the lower-load remainder.
 - **3rd+ / confident:** challenge-first — spec and criteria up front, teach only what the attempt exposes.
 - Adjust live — too easy → fade faster; struggling → add a worked example back.
+- **(Optional) read the load signal.** When you can't tell where the learner sits, ask a quick per-step effort rating ("1–7, how much mental effort did that take?"). A high rating means keep it worked; consistently low means fade. It's a cheaper, faster read than waiting for the challenge to surface the gap.
 
 ### Invariants (always)
 Learner actively produces (no passive copying) · challenges are near-transfer and tied to the real goal · acceptance criteria are stated *before* the attempt · hints are graduated, the answer is last resort · one new unit at a time.
